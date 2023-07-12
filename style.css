@@ -1,0 +1,75 @@
+/* G E R A L */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: interFont;
+  src: url(Inter-SemiBold.woff);
+}
+body {
+  background: rgb(255, 253, 253);
+  font-family: interFont;
+}
+/*******************************************/
+
+/* L O G O  &  N A V - B A R */
+.container-menu {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 100px 100px;
+}
+.container-menu .image {
+  margin: 20px;
+  width: 300px;
+  background-image: url(img/logo.png);
+  background-size: cover;
+  overflow: hidden;
+  background-position-x: -15px;
+  background-position-y: -55px;
+}
+
+.container-menu .nav-list {
+  width: 120px;
+  margin-left: 30px;
+}
+
+.container-menu .nav-list ul {
+  width: 120px;
+  display: block;
+}
+
+.container-menu .nav-list ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.container-menu .nav-list ul li a {
+  color: rgb(15, 15, 10);
+  list-style: none;
+  text-decoration: none;
+}
+
+.container-menu .nav-list ul li a:hover {
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 100, 0);
+  text-decoration-thickness: 3px;
+}
+
+.nav-list ul li img {
+  display: none;
+}
+
+.nav-list ul li:hover img {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  max-width: 400px;
+}
+/*****************************/
+
+/* P 5 . J S */
