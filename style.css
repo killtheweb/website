@@ -29,7 +29,7 @@ p{
 .container-menu .image {
   margin: 20px;
   width: 300px;
-  background-image: url(./logo.png);
+  background-image: url(/logo.png);
   background-size: cover;
   overflow: hidden;
   background-position-x: -15px;
