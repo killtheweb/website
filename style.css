@@ -13,6 +13,10 @@ body {
   background: rgb(255, 253, 253);
   font-family: interFont;
 }
+p{
+  user-select:none;
+  pointer-events: none;
+}
 /*******************************************/
 
 /* L O G O  &  N A V - B A R */
