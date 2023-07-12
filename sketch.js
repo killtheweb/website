@@ -20,7 +20,7 @@ function mousePressed() {}
 
 function draw() {
   var p = createP(abc);
-  p.position(mouseX, mouseY);
+  p.position(100, 100);
   // background(255, 254, 254);
   if (mouseIsPressed) {
     strokeWeight(5);
