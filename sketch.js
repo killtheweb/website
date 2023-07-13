@@ -5,7 +5,7 @@ function setup() {
   cnv.position(0, 0);
   cnv.style("z-index", "-1");
 
-  // background(255, 255, 254);
+  background(255, 255, 254);
 }
 
 function windowResized() {
@@ -13,22 +13,27 @@ function windowResized() {
 }
 
 function keyPressed() {
-  clear();
+  if (key === " ") {
+    clear();
+    background(255, 255, 254);
+  } else if (key === "s") {
+    // background(255, 255, 254);
+    save("myCanvas.jpg");
+    background(255, 255, 254);
+  }
 }
 
 function mousePressed() {}
 
 function draw() {
-  var p = createP(abc);
-  p.position(mouseX, mouseY);
+  //var p = createP(abc);
+  // p.position(mouseX, mouseY);
   // background(255, 254, 254);
-  if (mouseIsPressed) {
-    strokeWeight(5);
-    line(
-      pmouseX - map(sin(radians(frameCount)), -1, 1, -10, 10),
-      pmouseY - 10,
-      mouseX,
-      mouseY
-    );
-  }
+  strokeWeight(5);
+  line(
+    pmouseX - map(sin(radians(frameCount)), -1, 1, -10, 10),
+    pmouseY - 10,
+    mouseX,
+    mouseY
+  );
 }
