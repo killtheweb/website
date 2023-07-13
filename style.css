@@ -12,14 +12,22 @@
 body {
   background: rgb(255, 253, 253);
   font-family: interFont;
+  overflow: hidden;
 }
-p{
-  user-select:none;
+
+p {
+  font-family: interFont;
+  user-select: none;
   pointer-events: none;
+}
+
+h1 {
+  font-family: interFont;
+  font-size: 16pt;
 }
 /*******************************************/
 
-/* L O G O  &  N A V - B A R */
+/* H O M E */
 .container-menu {
   display: grid;
   width: 100vw;
@@ -29,7 +37,7 @@ p{
 .container-menu .image {
   margin: 20px;
   width: 300px;
-  background-image: url(./logo.png);
+  background-image: url(/logo.png);
   background-size: cover;
   overflow: hidden;
   background-position-x: -15px;
@@ -74,6 +82,27 @@ p{
   z-index: 1;
   max-width: 400px;
 }
+
+.commands {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  /* background: red; */
+  top: -25px;
+}
+
+.commands p {
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+/*****************************/
+
+/* W O R K  */
+.header {
+  margin-left: 30px;
+}
+
 /*****************************/
 
 /* P 5 . J S */
